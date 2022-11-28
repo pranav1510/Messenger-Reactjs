@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, red, blue);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.App .login {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  height: 150px;
+  width: 400px;
+  background-color: rgba(0,0,0,0.70);
+  margin: 10px;
+}
+
+.App .login .fields {
+  display: flex;
+  justify-content: space-around;
+}
+
+.App .login .fields > label {
+  color:aliceblue;
+  font-size: medium;
+  margin-right: 5px;
+}
+
+.App .login .fields > input {
+  font-size: medium;
+  height: 25px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  font-weight: bold;
+  padding:5px;
+  border-radius: 8px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  width: 420px;
+  background-color: aliceblue;
+}
+
+.chat-header {
+  height: 45px;
+  background-color: rgb(4, 99, 131);
+  width: 420px;
+}
+
+.chat-box {
+  width:420px;
+  min-height: 400px;
+  max-height: none;
+  background-color: aliceblue;
+  overflow-y: scroll;
+}
+
+.chat-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 420px;
+  height: 55px;
+  background-color: rgb(4,99,131);
+}
+
+.message-content {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 120px;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+h2 {
+  color: white;
+  margin: 5px;
+}
+
+.chat-footer > input {
+  height: 30px;
+  width: 330px;
+  border-radius: 10px;
+  padding:5px;
+  font-size: 16px;
+}
+
+.message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#other .message-meta {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+#you {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#you .message-meta {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  display: flex;
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
